@@ -1,10 +1,8 @@
 package com.pasekabank.settlement;
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+
 public class Main {
-
-    public void main (String[] args){
-
+    // Standard entry point signature
+    public static void main(String[] args) {
         System.out.println("hi there");
     }
 }
