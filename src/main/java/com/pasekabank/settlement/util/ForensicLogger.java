@@ -13,11 +13,12 @@ public class ForensicLogger {
     private BigDecimal Amount;
 
 
-public ForensicLogger(BigDecimal sourceCurrency , BigDecimal exchangeRate) {
-this.SourceCurrency = sourceCurrency;
-this.ExchangeRate = exchangeRate;
-
-}
+    public ForensicLogger(String sourceCur, String targetCur, BigDecimal rate, BigDecimal amount) {
+        this.sourceCurrency = sourceCur;
+        this.targetCurrency = targetCur;
+        this.exchangeRate = rate;
+        this.amount = amount;
+    }
 
 // synchronized is used to handle  same time method calling
 
