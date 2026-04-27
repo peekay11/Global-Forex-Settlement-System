@@ -17,6 +17,7 @@ public class ExchangeService {
 
     }
 
+
     public BigDecimal getExchangeRate() {
 
         if  (exchangeRate == null) {
