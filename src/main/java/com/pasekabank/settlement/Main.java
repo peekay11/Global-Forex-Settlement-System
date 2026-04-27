@@ -15,7 +15,7 @@ public class Main {
 
         ForensicLogger log = new ForensicLogger(amount, conversionRate);
 
-
+//view it in string format
         System.out.println(log.toString());
 
     }
