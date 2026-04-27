@@ -16,7 +16,7 @@ public class Main {
         ForensicLogger log = new ForensicLogger(amount, conversionRate);
 
 
-        System.out.println(log.createLog());
+        System.out.println(log.toString());
 
     }
 }
