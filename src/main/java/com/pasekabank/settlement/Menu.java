@@ -32,4 +32,4 @@ public class Menu {
         System.out.println("   Thank you for using PasekaBank. Goodbye!    ");
         System.out.println("-----------------------------------------------\n");
     }
-} // Final closing brace must be after all methods
+}

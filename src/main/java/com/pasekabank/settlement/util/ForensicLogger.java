@@ -1,5 +1,5 @@
 package com.pasekabank.settlement.util;
-
+import java.time.LocalDateTime;
 import java.math.BigDecimal;
 import java.util.UUID;
 
@@ -13,7 +13,7 @@ public class ForensicLogger {
     private BigDecimal Amount;
 
 
-    public ForensicLogger(String sourceCur, String targetCur, BigDecimal rate, BigDecimal amount) {
+    public ForensicLogger(String sourceCur, String targetCur, BigDecimal rate, BigDecimal amount ) {
         this.SourceCurrency = sourceCur;
         this.TargetCurrency = targetCur;
         this.ExchangeRate = rate;
@@ -38,6 +38,13 @@ public String getTargetCurrency() {
 public BigDecimal getExchangeRate() {
     return ExchangeRate;
 }
+
+
+public LocalDateTime getDateTime(){
+
+        return LocalDateTime.now();
+}
+
 public BigDecimal getAmount() {
     return Amount;
 }
@@ -59,10 +66,11 @@ public void setAmount(BigDecimal Amount) {
 }
 
 
-    public String toString() { // Changed to camelCase (Java standard)
+    public String generateLOg() { // Changed to camelCase (Java standard)
         return "TransactionId: " + getTransactionId() + "\n" +
                 "SourceCurrency: " + getSourceCurrency() + "\n" +
                 "TargetCurrency: " + getTargetCurrency() + "\n" +
+                "Date/Time :" + getDateTime() + "\n" +
                 "ExchangeRate: " + getExchangeRate() + "\n" +
                 "Amount: " + getAmount();
     }
