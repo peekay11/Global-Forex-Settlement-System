@@ -7,17 +7,17 @@ public class ForensicLogger {
 //    construct the data  needed
 
     private String TransectionId;
-    private BigDecimal SourceCurrency;
-    private BigDecimal TargetCurrency;
+    private String SourceCurrency;
+    private String TargetCurrency;
     private BigDecimal ExchangeRate;
     private BigDecimal Amount;
 
 
     public ForensicLogger(String sourceCur, String targetCur, BigDecimal rate, BigDecimal amount) {
-        this.sourceCurrency = sourceCur;
-        this.targetCurrency = targetCur;
-        this.exchangeRate = rate;
-        this.amount = amount;
+        this.SourceCurrency = sourceCur;
+        this.TargetCurrency = targetCur;
+        this.ExchangeRate = rate;
+        this.Amount = amount;
     }
 
 // synchronized is used to handle  same time method calling
@@ -29,10 +29,10 @@ public  synchronized String getTransactionId() {
     }
     return TransectionId;
 }
-public BigDecimal getSourceCurrency() {
+public String getSourceCurrency() {
     return SourceCurrency;
 }
-public BigDecimal getTargetCurrency() {
+public String getTargetCurrency() {
     return TargetCurrency;
 }
 public BigDecimal getExchangeRate() {
@@ -44,10 +44,11 @@ public BigDecimal getAmount() {
 public void setTransectionId(String TransectionId) {
     this.TransectionId = TransectionId;
 }
-public void setSourceCurrency(BigDecimal SourceCurrency) {
+public void setSourceCurrency(String SourceCurrency) {
     this.SourceCurrency = SourceCurrency;
+
 }
-public void setTargetCurrency(BigDecimal TargetCurrency) {
+public void setTargetCurrency(String TargetCurrency) {
     this.TargetCurrency = TargetCurrency;
 }
 public void setExchangeRate(BigDecimal ExchangeRate) {
