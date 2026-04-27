@@ -1,4 +1,8 @@
 package com.pasekabank.settlement;
+import com.pasekabank.settlement.service.ExchangeService;
+
+import java.awt.*;
+import java.math.BigDecimal;
 import java.util.Scanner;
 
 public class Main {
@@ -6,13 +10,15 @@ public class Main {
         Scanner scanner = new Scanner(System.in); // Create it once here
 
         Menu.welcome();
-        Menu.load();
+
 
         System.out.print("Enter 1 to start settlement or 0 to exit: ");
         int choice = scanner.nextInt(); // Use it here
 
         if (choice == 1) {
-            // Logic to start conversion
+
+          Menu.options();
+
 
 
         } else {
