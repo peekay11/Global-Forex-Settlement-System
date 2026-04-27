@@ -8,7 +8,7 @@ public class ExchangeService {
     private BigDecimal initialAmount;
 
     //
-    public ExchangeService(BigDecimal exchangeRate, BigDecimal initialAmount) {
+    public ExchangeService(BigDecimal initialAmount, BigDecimal exchangeRate) {
         this.exchangeRate = exchangeRate;
         this.initialAmount = initialAmount;
     }
