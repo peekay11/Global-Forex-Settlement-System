@@ -56,6 +56,7 @@ public void setAmount(BigDecimal Amount) {
     this.Amount = Amount;
 }
 
+
     public String toString() { // Changed to camelCase (Java standard)
         return "TransactionId: " + getTransactionId() + "\n" +
                 "SourceCurrency: " + getSourceCurrency() + "\n" +
