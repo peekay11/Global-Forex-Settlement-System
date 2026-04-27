@@ -17,6 +17,8 @@ public class Main {
 
 
 
+
+
         ForensicLogger log = new ForensicLogger(sourceCur, targetCur, rate, amount);
 
 //view it in string format
