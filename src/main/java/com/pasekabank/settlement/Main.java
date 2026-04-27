@@ -1,8 +1,22 @@
 package com.pasekabank.settlement;
 
+import com.pasekabank.settlement.util.ForensicLogger;
+import java.math.BigDecimal;
+
 public class Main {
-    // Standard entry point signature
+
+
+
+
     public static void main(String[] args) {
-        System.out.println("hi there");
+
+        BigDecimal amount = new BigDecimal("100.00");
+        BigDecimal conversionRate = new BigDecimal("1.15");
+
+        ForensicLogger log = new ForensicLogger(amount, conversionRate);
+
+
+        System.out.println(log.createLog());
+
     }
 }
